@@ -1,94 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Montserrat&display=swap');
-body {
-    background-color: rgb(96, 2, 124);
-    animation-name: bg-change;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=VT323&display=swap');
 * {
-    background-color: blue;
+    background-color: #000000;
+    color: #bcbcbc;
+    font-family: Anonymous Pro;
 }
 
-.main {
-    border-radius: 25px;
-    position: fixed;
-    padding: 6px 6px;
-    height: 150px;
-    width: 530px;
-    box-shadow: 50px 60px 50px rgb(97, 31, 160);
-    background-color: blueviolet;
-    border: 5px solid blueviolet;
+.header {
+    font-family: Anonymous Pro;
+}
+
+.subtitle {
+    font-family: Anonymous Pro;
+}
+
+.header:hover:before {
+    content: ">";
+}
+
+.subtitle:hover:before {
+    content: ">>>";
+}
+
+.container {
+    position: relative;
+    height: 773px;
+}
+
+.footer {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    animation-name: raid-shadow-changes;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
+    bottom: 0;
+    font-size: xx-small;
 }
 
-.big {
-    border-radius: 25px;
-    padding: 5px 5px;
-    box-shadow: 5px 10px 10px rgb(97, 31, 160);
-    background-color: blueviolet;
-    border: 5px solid blueviolet;
-    font-size: larger;
-    height: 20px;
-    width: 500px;
-    margin-bottom: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.small {
-    border-radius: 25px;
-    padding: 8px 8px;
-    box-shadow: 5px 10px 10px rgb(97, 31, 160);
-    background-color: blueviolet;
-    border: 5px solid blueviolet;
+.footer:hover {
     font-size: medium;
-    height: 40px;
-    width: 500px;
-    clear: both;
-    margin: inherit;
-    font-family: 'Inria Sans', sans-serif;
 }
 
-@keyframes bg-change {
-    0% {
-        background-color: purple;
-    }
-    25% {
-        background-color: blueviolet;
-    }
-    50% {
-        background-color: blue;
-    }
-    75% {
-        background-color: blueviolet;
-    }
-    100% {
-        background-color: purple;
-    }
+.emphasised {
+    color: #ff0000;
 }
 
-@keyframes raid-shadow-changes {
-    0% {
-        box-shadow: 10px 10px 50px purple;
-    }
-    25% {
-        box-shadow: 10px 10px 50px blueviolet;
-    }
-    50% {
-        box-shadow: 10px 10px 50px blue;
-    }
-    75% {
-        box-shadow: 10px 10px 50px blueviolet;
-    }
-    100% {
-        box-shadow: 10px 10px 50px purple;
-    }
+.con-edit {
+    color: #d700ff;
+}
+
+a:visited {
+    color: #008000;
+    text-decoration: none;
+}
+
+a:link {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #808000;
+    text-decoration: underline;
+    font-family: VT323;
+    cursor: grab;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a:hover:before {
+    content: "> "
 }
