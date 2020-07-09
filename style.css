@@ -30,6 +30,7 @@
     position: absolute;
     bottom: 0;
     font-size: xx-small;
+    cursor:zoom-in;
 }
 
 .footer:hover {
@@ -42,7 +43,7 @@
 
 .con-edit {
     color: #d700ff;
-    cursor:zoom-in;
+    
 }
 
 a:visited {
