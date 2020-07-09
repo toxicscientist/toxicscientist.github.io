@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Montserrat&display=swap');
+body {
+    background-color: rgb(96, 2, 124);
+    animation-name: bg-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+* {
+    background-color: blue;
+}
+
+.main {
+    border-radius: 25px;
+    position: fixed;
+    padding: 6px 6px;
+    height: 150px;
+    width: 530px;
+    box-shadow: 50px 60px 50px rgb(97, 31, 160);
+    background-color: blueviolet;
+    border: 5px solid blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation-name: raid-shadow-changes;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.big {
+    border-radius: 25px;
+    padding: 5px 5px;
+    box-shadow: 5px 10px 10px rgb(97, 31, 160);
+    background-color: blueviolet;
+    border: 5px solid blueviolet;
+    font-size: larger;
+    height: 20px;
+    width: 500px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.small {
+    border-radius: 25px;
+    padding: 8px 8px;
+    box-shadow: 5px 10px 10px rgb(97, 31, 160);
+    background-color: blueviolet;
+    border: 5px solid blueviolet;
+    font-size: medium;
+    height: 40px;
+    width: 500px;
+    clear: both;
+    margin: inherit;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+@keyframes bg-change {
+    0% {
+        background-color: purple;
+    }
+    25% {
+        background-color: blueviolet;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: blueviolet;
+    }
+    100% {
+        background-color: purple;
+    }
+}
+
+@keyframes raid-shadow-changes {
+    0% {
+        box-shadow: 10px 10px 50px purple;
+    }
+    25% {
+        box-shadow: 10px 10px 50px blueviolet;
+    }
+    50% {
+        box-shadow: 10px 10px 50px blue;
+    }
+    75% {
+        box-shadow: 10px 10px 50px blueviolet;
+    }
+    100% {
+        box-shadow: 10px 10px 50px purple;
+    }
+}
