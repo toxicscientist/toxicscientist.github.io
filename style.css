@@ -1,70 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Patrick+Hand&display=swap');
 * {
-    background-color: #000000;
-    color: #bcbcbc;
-    font-family: Anonymous Pro;
-}
-
-.header {
-    font-family: Anonymous Pro;
-}
-
-.subtitle {
-    font-family: Anonymous Pro;
-}
-
-.header:hover:before {
-    content: ">";
-}
-
-.subtitle:hover:before {
-    content: ">>>";
+    background-color: #202040;
 }
 
 .container {
+    border: 0px solid transparent;
+}
+
+.subtitle {
+    font-size: medium;
+}
+
+.main-cont {
+    font-family: 'Coming Soon', cursive;
+    clear: both;
+    top: 30px;
+    padding: 15px;
+}
+
+.main-cont, .header {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
     position: relative;
-    height: 773px;
+    bottom: 0;
+    animation: box-glow 1s ease-in-out infinite alternate;
+    border-radius: 25px;
+}
+
+.footer, .header, .subtitle {
+    font-family: "Patrick Hand", cursive;
+    clear: both;
+    color: #fff;
+}
+
+.header {
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    height: 30px;
+}
+
+.head-cont {
+    animation: box-glow 1s ease-in-out infinite alternate;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.head-cont, .header, .mini-header {
+    font-family: "patrick hand";
+    text-align: center;
+    border-radius: 10px;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
     font-size: xx-small;
+    cursor: zoom-in;
 }
 
 .footer:hover {
     font-size: medium;
 }
 
-.emphasised {
-    color: #ff0000;
-}
-
-.con-edit {
-    color: #d700ff;
-}
-
-a:visited {
-    color: #008000;
-    text-decoration: none;
-}
-
-a:link {
-    color: #00ff00;
-    text-decoration: none;
+a {
+    color: #ff4da6
 }
 
 a:hover {
-    color: #808000;
-    text-decoration: underline;
-    font-family: VT323;
-    cursor: grab;
+    color: hotpink;
 }
 
-a:active {
-    text-decoration: underline;
+[contenteditable] {
+    outline: 0px solid transparent;
+    color: greenyellow
 }
 
-a:hover:before {
-    content: "> "
+@keyframes glow {
+    from {
+        text-shadow: 0 0 100px #fff, 0 0 20px #fff, 0 0 30px #fa4fa5, 0 0 40px #ff66b2, 0 0 50px #ff54a9, 0 0 60px #fd69b3, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@keyframes box-glow {
+    from {
+        box-shadow: 0px 0px 5px rgb(191, 0, 197), 2px 2px 10px rgb(191, 0, 197);
+    }
+    to {
+        box-shadow: 0px 0px 20px rgb(199, 0, 206), 0px 0px 25px rgb(246, 22, 253);
+    }
 }
