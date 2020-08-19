@@ -3,8 +3,19 @@
     background-color: #202040;
 }
 
+body {
+    height: 100%;
+    width: 99.5%;
+    border: 0em transparent;
+    overflow: hidden;
+}
+
 .container {
-    border: 0px solid transparent;
+    position: relative;
+    right: 5px;
+    width: 100.5%;
+    height: 99%;
+    border: 0em transparent;
 }
 
 .subtitle {
