@@ -1,90 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=VT323&display=swap');
 * {
-    background-color: #202040;
+    background-color: #000000;
+    color: #bcbcbc;
+    font-family: Anonymous Pro;
+    text-shadow: 5px 5px 10px;
+    align-content: center;
+    transition: all 1s;
+    /*Stolen from https://www.w3schools.com/cssref/css3_pr_user-select.asp */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
 }
 
-body {
-    height: 100%;
-    width: 99.5%;
-    border: 0em transparent;
-    overflow: hidden;
+.header {
+    font-family: Anonymous Pro;
+}
+
+.header:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-family: Anonymous Pro;
+}
+
+.header:hover:before {
+    content: ">";
+}
+
+.subtitle:hover:before {
+    content: ">>>";
 }
 
 .container {
     position: relative;
-    right: 5px;
-    width: 100.5%;
-    height: 99%;
-    border: 0em transparent;
-}
-
-.subtitle {
-    font-size: medium;
-}
-
-.main-cont {
-    font-family: 'Coming Soon', cursive;
-    clear: both;
-    top: 30px;
-    padding: 15px;
-}
-
-.main-cont, .header {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    bottom: 0;
-    animation: box-glow 1s ease-in-out infinite alternate;
-    border-radius: 25px;
-}
-
-.footer, .header, .subtitle {
-    font-family: "Patrick Hand", cursive;
-    clear: both;
-    color: #fff;
-}
-
-.header {
-    color: #fff;
-    animation: glow 1s ease-in-out infinite alternate;
-    height: 30px;
-}
-
-.head-cont {
-    animation: box-glow 1s ease-in-out infinite alternate;
-    border-radius: 25px;
-    padding: 15px;
-}
-
-.head-cont, .header, .mini-header {
-    font-family: "patrick hand";
-    text-align: center;
-    border-radius: 10px;
+    height: 100%;
+    background-color: black;
 }
 
 .footer {
     position: absolute;
-    bottom: 0;
+    bottom: sticky;
     font-size: xx-small;
-    cursor: zoom-in;
 }
 
 .footer:hover {
     font-size: medium;
 }
 
-a {
-    color: #ff4da6
+.emphasised {
+    color: #ff0000;
+}
+
+.con-edit {
+    color: #d700ff;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.blur:hover {
+    filter: none;
+    color: white;
+    opacity: 1;
+    font-size: 130%;
+}
+
+.blur:hover:after {
+    content: "]"
+}
+
+.blur:hover:before {
+    content: "[";
+}
+
+h1{
+    color: yellowgreen;
+}
+
+a:visited {
+    color: #008000;
+    text-decoration: none;
+}
+
+a:link {
+    color: #00ff00;
+    text-decoration: none;
 }
 
 a:hover {
-    color: hotpink;
+    color: #808000;
+    text-decoration: underline;
+    font-size: 110%;
 }
 
-[contenteditable] {
-    outline: 0px solid transparent;
-    color: greenyellow
+a:active {
+    text-decoration: underline;
+}
+
+a:hover:before {
+    content: "./"
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted yellow;
+    color: yellow;
+    height: 1px;
+}
+
+iframe:hover {
+    animation: shake 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    10% {
+        filter: hue-rotate(-2deg);
+    }
+    20% {
+        filter: hue-rotate(2deg);
+    }
+    30% {
+        filter: hue-rotate(0deg);
+    }
+    40% {
+        filter: hue-rotate(1deg);
+    }
+    50% {
+        filter: hue-rotate(-1deg);
+    }
+    60% {
+        filter: hue-rotate(0deg);
+    }
+    70% {
+        filter: hue-rotate(-1deg);
+    }
+    80% {
+        filter: hue-rotate(1deg);
+    }
+    90% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(-1deg);
+    }
 }
 
 @keyframes glow {
@@ -93,14 +157,5 @@ a:hover {
     }
     to {
         text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}
-
-@keyframes box-glow {
-    from {
-        box-shadow: 0px 0px 5px rgb(191, 0, 197), 2px 2px 10px rgb(191, 0, 197);
-    }
-    to {
-        box-shadow: 0px 0px 20px rgb(199, 0, 206), 0px 0px 25px rgb(246, 22, 253);
     }
 }
