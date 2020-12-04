@@ -1,59 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-    background-color: #000000;
-    color: #bcbcbc;
-    font-family: Anonymous Pro;
-    text-shadow: 5px 5px 10px;
+    color: #000000;
+    background-color: inherit;
+    font-family: Roboto;
     align-content: center;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
     /*Stolen from https://www.w3schools.com/cssref/css3_pr_user-select.asp */
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10+ and Edge */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10+ and Edge */
+    user-select: none;
+    /* Standard syntax */
+    text-align: center
+}
+
+body {
+    background-color: #efbbff;
 }
 
 .header {
-    font-family: Anonymous Pro;
-}
-
-.header:hover {
-    animation: glow 1s ease-in-out infinite alternate;
+    size: 15px;
 }
 
 .subtitle {
-    font-family: Anonymous Pro;
+    width: max-content;
+    text-align: center;
+    border-radius: 4px;
+    margin: auto;
 }
 
-.header:hover:before {
-    content: ">";
-}
-
-.subtitle:hover:before {
-    content: ">>>";
+.subtitle:hover {
+    color: darkgrey;
 }
 
 .container {
     position: relative;
     height: 100%;
-    background-color: black;
 }
 
-.footer {
-    position: absolute;
-    bottom: sticky;
-    font-size: xx-small;
+.spicy-box {
+    background: #e7e7ff;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 1px 1px #9ACDFF;
+    width: fit-content;
+    border-radius: 4px;
+    margin: auto;
 }
 
-.footer:hover {
-    font-size: medium;
+.spicy-box:hover {
+    box-shadow: 0px 0px 5px 5px #6cb5fd;
+    border-radius: 100px;
 }
 
-.emphasised {
-    color: #ff0000;
+.box {
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px #1f1f1f;
+    width: fit-content;
+    max-width: 500px;
+    border-radius: 4px;
+    margin: auto;
 }
 
-.con-edit {
-    color: #d700ff;
+.box:hover {
+    border-radius: 50px;
 }
 
 .blur {
@@ -64,98 +75,33 @@
     filter: none;
     color: white;
     opacity: 1;
-    font-size: 130%;
 }
 
-.blur:hover:after {
-    content: "]"
-}
-
-.blur:hover:before {
-    content: "[";
-}
-
-h1{
-    color: yellowgreen;
+a {
+    background-color: inherit;
 }
 
 a:visited {
-    color: #008000;
+    color: #3224ad;
     text-decoration: none;
+    background-color: inherit;
 }
 
 a:link {
-    color: #00ff00;
+    color: #3994db;
     text-decoration: none;
+    background-color: inherit;
 }
 
 a:hover {
-    color: #808000;
     text-decoration: underline;
-    font-size: 110%;
+    filter: hue-rotate(45deg);
 }
 
-a:active {
-    text-decoration: underline;
+footer {
+    font-size: xx-small;
 }
 
-a:hover:before {
-    content: "./"
-}
-
-hr {
-    border: none;
-    border-top: 1px dotted yellow;
-    color: yellow;
-    height: 1px;
-}
-
-iframe:hover {
-    animation: shake 0.2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    10% {
-        filter: hue-rotate(-2deg);
-    }
-    20% {
-        filter: hue-rotate(2deg);
-    }
-    30% {
-        filter: hue-rotate(0deg);
-    }
-    40% {
-        filter: hue-rotate(1deg);
-    }
-    50% {
-        filter: hue-rotate(-1deg);
-    }
-    60% {
-        filter: hue-rotate(0deg);
-    }
-    70% {
-        filter: hue-rotate(-1deg);
-    }
-    80% {
-        filter: hue-rotate(1deg);
-    }
-    90% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(-1deg);
-    }
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 100px #fff, 0 0 20px #fff, 0 0 30px #fa4fa5, 0 0 40px #ff66b2, 0 0 50px #ff54a9, 0 0 60px #fd69b3, 0 0 70px #e60073;
-    }
-    to {
-        text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
+footer:hover {
+    font-size: small;
 }

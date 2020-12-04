@@ -3,7 +3,7 @@
 
 My website which has
 
-+ A link to my Youtube
-+ A few nifty games I made
-+ Etcetera
-+ More Etcetera
+* Links to my Social Media
+* Links to some of my projects
+* Methods to contact me
+* A lot of `:hover`
