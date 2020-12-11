@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-    color: #000000;
+    color: #f2f0ed;
     background-color: inherit;
     font-family: Roboto;
     align-content: center;
@@ -16,7 +16,9 @@
 }
 
 body {
-    background-color: #efbbff;
+    background-color: #400058;
+    border-color: #0e1011;
+    color: #f2f0ed;
 }
 
 .header {
@@ -28,6 +30,7 @@ body {
     text-align: center;
     border-radius: 4px;
     margin: auto;
+    color: #e1dcd7;
 }
 
 .subtitle:hover {
@@ -40,12 +43,13 @@ body {
 }
 
 .spicy-box {
-    background: #e7e7ff;
+    background: #15181a;
     padding: 5px 5px;
-    box-shadow: 0px 0px 1px 1px #9ACDFF;
+    box-shadow: 0px 0px 1px 1px #0e1011;
     width: fit-content;
     border-radius: 4px;
     margin: auto;
+    color: #e1dcd7;
 }
 
 .spicy-box:hover {
@@ -54,13 +58,14 @@ body {
 }
 
 .box {
-    background: #fff;
+    background: #0e1011;
     padding: 10px 10px;
     box-shadow: 0 2px 5px #1f1f1f;
     width: fit-content;
     max-width: 500px;
     border-radius: 4px;
     margin: auto;
+    color: inherit;
 }
 
 .box:hover {
@@ -79,16 +84,17 @@ body {
 
 a {
     background-color: inherit;
+    color: #3b9ee9;
 }
 
 a:visited {
-    color: #3224ad;
+    color: #705ed3;
     text-decoration: none;
     background-color: inherit;
 }
 
 a:link {
-    color: #3994db;
+    color: #3b9ee9;
     text-decoration: none;
     background-color: inherit;
 }
