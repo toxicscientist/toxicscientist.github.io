@@ -25,6 +25,11 @@ body {
     size: 15px;
 }
 
+.header, .splash {
+    border-radius: 1250px;
+    border: 0px;
+}
+
 .subtitle {
     width: max-content;
     text-align: center;
@@ -102,6 +107,10 @@ a:link {
 a:hover {
     text-decoration: underline;
     filter: hue-rotate(45deg);
+}
+
+code{
+    font-family: monospace;
 }
 
 footer {

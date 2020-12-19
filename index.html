@@ -1,19 +1,17 @@
 <html>
 
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168548583-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-168548583-3');
     </script>
 
     <title>
-        Nerdopedia's website
+        Nerdopedia
     </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="Favicon.ico" />
@@ -26,6 +24,7 @@
                 <h1 class="header">
                     Nerdopedia's Official website
                 </h1>
+                <h3 class="splash" id="splash"> </h3>
             </div>
         <br>
         </div>
@@ -48,8 +47,7 @@
             <div class="box">
                 <a href="mailto:realnerdopedia@gmail.com">My Gmail</a>
                 <p>
-                    <b style="color: blueviolet;" class="blur">@Nerdocreepia #5378</b> on <a
-                        href="https://discord.com">Discord</a>
+                    <b style="color: blueviolet;" class="blur">@Nerdocreepia #5378</b> on <a href="https://discord.com">Discord</a>
                 <p>
             </div>
             <br>
@@ -72,5 +70,87 @@
             <br>
     </div>
 </body>
+<script>
+    const splashChoices = [
+        "You definitely didn\'t mean  to come here",
+        "The low-IQ wonder!",
+        "A true Bruh Moment!",
+        "The true program was the friends we met along the way",
+        "sub4sub?",
+        "<code>/give @p IQ 150</code>",
+        "Breathtaking!",
+        "8/10 - Not enough fight scenes",
+        "8/10 - Not enough <code>:hover<code>",
+        "8/10 - Not enough reviews",
+        "uwu",
+        "owo",
+        "May contain nuts!",
+        "May contain seafood! I'm not mad though",
+        ":)",
+        "...?",
+        "...!",
+        "Life-sized!",
+        "\"Nerdopedia\" is a portmanteau of \"Nerd\" and \"Encyclopedia\"",
+        "404 - Splash not found!",
+        "My password is [REDACTED]",
+        "Is your refrigerator running?",
+        "Nerdopedia",
+        "pls rt",
+        "I really like polynomials",
+        "To-Ko-Yami!",
+        "Well, well, well",
+        "Water-proof!",
+        "Source: Just trust me bro",
+        "Roko's basilisk",
+        "Just give me my Vicodin",
+        "Ask your mum!",
+        "& Knuckles",
+        "Now available for the new Nintendo 3DS!",
+        "Featuring Dante from the Devil May Cry series!",
+        "& Watch",
+        "Deluxe!",
+        "Also plays on 2DS!",
+        "Yanny",
+        "Laurel",
+        "Thoughts and Prayers🙏",
+        "Clbuttic",
+        "I may be stupid...",
+        "How much wood could a woodchuck chuck...",
+        "Yes, I know it looks ugly",
+        "Press [F] to pay respects",
+        "Clear your history!",
+        "Limited edition",
+        "1337",
+        "This website is sponsored by-",
+        "Don't dig straight down",
+        "Unpredictable",
+        "According to all known laws of-",
+        "In just one punch!",
+        "I was born with glass bones and paper skin",
+        "h",
+        "SPLASH is REFERENCE",
+        "Tax Evasion!",
+        "Stay in school and don't do drugs",
+        "3.14159265358979...",
+        "Stay at home!",
+        "Social distancing is cool!",
+        "Reload for better splash message",
+        "200% of your daily recommended dose of hyperbole!",
+        "Anime addiction activated",
+        "Not defective!",
+        "Batteries not included",
+        "Each set sold separately",
+        "I can't do a handstand",
+        "I am so sorry",
+        "yoo it smell like broke in here",
+        "undefined",
+        "😂 WHO DID THIS 😂",
+        "...but nobody came",
+        "Best viewed on Internet Explorer"
+    ];
+    let splash = splashChoices[Math.round(Math.random() * (splashChoices.length - 1))];
+    var splashDiv = document.getElementById('splash');
+    splashDiv.innerHTML = splash;
+</script>
 
 </html>
