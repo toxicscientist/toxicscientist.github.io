@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+$containerBG: #15181a
+$specElemBG: #111
+$lightSpecElemBG: #333
+$containerTxtCol: #e1dcd7
+
+*
+    transition: all 1s ease-in-out
+
+
+body
+    background: $containerBG
+
+code
+    font-family: monospace
+
+a
+    color: $containerTxtCol
+    text-decoration: none
+    user-select: none
+
+img
+    user-select: none
+
+flexbox
+    display: flex
+    justify-content: center
+    gap: 6px
+
+.container
+    background: $containerBG
+    padding: 5px 5px
+    width: max-content
+    max-width: 80%
+    margin: auto
+    color: $containerTxtCol
+    font-family: Roboto
+    text-align: center
+    overflow: visible
+
+.heading
+    background: $lightSpecElemBG
+    padding: 20px 30px 20px 30px
+    margin: auto
+    border-radius: 10px
+    box-shadow: 5px 7px 3px 1px $specElemBG
+    width: 80%
+    color: $containerTxtCol
+    font-family: Roboto
+    text-align: center
+    overflow: none
+
+.flexelem
+    background: $specElemBG
+    width: fit-content
+    margin: 6px
+
+.clickable
+    background: $lightSpecElemBG
+    padding: 20px 23px 25px 23px
+    // trbl
+    margin: 10px
+    border-radius: 10px
+    box-shadow: 5px 7px 3px 1px $specElemBG
+    &:hover
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+        box-shadow: 10px 13px 6px 2px $specElemBG
+        background: lighten($lightSpecElemBG, 10%)
+
+//---
+
+.quack
+    &:hover
+        animation: fadeIn 1s forwards, hueRotate 10s infinite linear
+
+@keyframes hueRotate
+    0%
+        filter: hue-rotate(0deg)
+        animation: hueRotate 10s infinite ease-out;
+    25%
+        filter: hue-rotate(180deg)
+        animation: hueRotate 10s infinite ease-in;
+    50%
+        filter: hue-rotate(360deg)
+        animation: hueRotate 10s infinite ease-out;
+    75%
+        filter: hue-rotate(180deg)
+        animation: hueRotate 10s infinite ease-in;
+    100%
+        filter: hue-rotate(0deg)
+        animation: hueRotate 10s infinite ease-out;

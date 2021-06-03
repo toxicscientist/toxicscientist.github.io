@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+* {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+body {
+  background: #15181a;
+}
+
+code {
+  font-family: monospace;
+}
+
+a {
+  color: #e1dcd7;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
+}
+
+.container {
+  background: #15181a;
+  padding: 5px 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 80%;
+  margin: auto;
+  color: #e1dcd7;
+  font-family: Roboto;
+  text-align: center;
+  overflow: visible;
+}
+
+.heading {
+  background: #333;
+  padding: 20px 30px 20px 30px;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 7px 3px 1px #111;
+          box-shadow: 5px 7px 3px 1px #111;
+  width: 80%;
+  color: #e1dcd7;
+  font-family: Roboto;
+  text-align: center;
+  overflow: none;
+}
+
+.flexelem {
+  background: #111;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 6px;
+}
+
+.clickable {
+  background: #333;
+  padding: 20px 23px 25px 23px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 7px 3px 1px #111;
+          box-shadow: 5px 7px 3px 1px #111;
+}
+
+.clickable:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 10px 13px 6px 2px #111;
+          box-shadow: 10px 13px 6px 2px #111;
+  background: #4d4d4d;
+}
+
+.quack:hover {
+  -webkit-animation: fadeIn 1s forwards, hueRotate 10s infinite linear;
+          animation: fadeIn 1s forwards, hueRotate 10s infinite linear;
+}
+
+@-webkit-keyframes hueRotate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    -webkit-animation: hueRotate 10s infinite ease-out;
+            animation: hueRotate 10s infinite ease-out;
+  }
+  25% {
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+    -webkit-animation: hueRotate 10s infinite ease-in;
+            animation: hueRotate 10s infinite ease-in;
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    -webkit-animation: hueRotate 10s infinite ease-out;
+            animation: hueRotate 10s infinite ease-out;
+  }
+  75% {
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+    -webkit-animation: hueRotate 10s infinite ease-in;
+            animation: hueRotate 10s infinite ease-in;
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    -webkit-animation: hueRotate 10s infinite ease-out;
+            animation: hueRotate 10s infinite ease-out;
+  }
+}
+
+@keyframes hueRotate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    -webkit-animation: hueRotate 10s infinite ease-out;
+            animation: hueRotate 10s infinite ease-out;
+  }
+  25% {
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+    -webkit-animation: hueRotate 10s infinite ease-in;
+            animation: hueRotate 10s infinite ease-in;
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    -webkit-animation: hueRotate 10s infinite ease-out;
+            animation: hueRotate 10s infinite ease-out;
+  }
+  75% {
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+    -webkit-animation: hueRotate 10s infinite ease-in;
+            animation: hueRotate 10s infinite ease-in;
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    -webkit-animation: hueRotate 10s infinite ease-out;
+            animation: hueRotate 10s infinite ease-out;
+  }
+}
+/*# sourceMappingURL=style.css.map */
