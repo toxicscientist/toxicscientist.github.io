@@ -1,20 +1,26 @@
 	[
 		{
 			"name": "Taratech Discord Bot",
-			"description": "My purely-utility Discord bot",
+			"description": "My purely-utility Discord bot(Node.js)",
 			"image": "https://media.discordapp.net/attachments/806189868325273630/848601628835315783/RobotopLogoSpiderEdit-BotPFP.png?width=559&height=559",
 			"link": "https://taratech.nerdopedia.repl.co/"
 		},
 		{
 			"name": "KyokaSignal Discord Bot",
-			"description": "A joke Discord bot made for the YKZA translators server",
+			"description": "A joke Discord bot made for the YKZA translators server(Node.js)",
 			"image": "https://img.icons8.com/ios-filled/344/k.png",
 			"link": "https://github.com/toxicscientist/KyokaSignal"
 		},
 		{
 			"name": "Genshin Impact Mini-Guide",
-			"description": "A simple website that lets you browse information about Genshin Impact from an API",
+			"description": "A simple website that lets you browse information about Genshin Impact from an API(Javascript)",
 			"image": "https://img.icons8.com/nolan/344/genshin-impact-logo.png",
 			"link": "https://genshin-thing.nerdopedia.repl.co/"
+		}
+		{
+			"name": "Payment Calculator",
+			"description": "Calculate tips and split the bill so that your restaurant experience can be as smooth as possible(Svelte)",
+			"image": "https://img.icons8.com/nolan/344/genshin-impact-logo.png",
+			"link": "https://pay.nerdopedia.repl.co/"
 		}
 	]
