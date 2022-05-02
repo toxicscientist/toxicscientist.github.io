@@ -1,0 +1,20 @@
+	[
+		{
+			"name": "Taratech Discord Bot",
+			"description": "My purely-utility Discord bot",
+			"image": "https://media.discordapp.net/attachments/806189868325273630/848601628835315783/RobotopLogoSpiderEdit-BotPFP.png?width=559&height=559",
+			"link": "https://taratech.nerdopedia.repl.co/"
+		},
+		{
+			"name": "KyokaSignal Discord Bot",
+			"description": "A joke Discord bot made for the YKZA translators server",
+			"image": "https://img.icons8.com/ios-filled/344/k.png",
+			"link": "https://github.com/toxicscientist/KyokaSignal"
+		},
+		{
+			"name": "Genshin Impact Mini-Guide",
+			"description": "A simple website that lets you browse information about Genshin Impact from an API",
+			"image": "https://img.icons8.com/nolan/344/genshin-impact-logo.png",
+			"link": "https://genshin-thing.nerdopedia.repl.co/"
+		}
+	]
