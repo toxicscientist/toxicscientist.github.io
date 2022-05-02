@@ -16,7 +16,7 @@
 			"description": "A simple website that lets you browse information about Genshin Impact from an API(Javascript)",
 			"image": "https://img.icons8.com/nolan/344/genshin-impact-logo.png",
 			"link": "https://genshin-thing.nerdopedia.repl.co/"
-		}
+		},
 		{
 			"name": "Payment Calculator",
 			"description": "Calculate tips and split the bill so that your restaurant experience can be as smooth as possible(Svelte)",
