@@ -35,6 +35,7 @@ flexbox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  flex-wrap: wrap;
   gap: 6px;
 }
 
@@ -68,16 +69,26 @@ flexbox {
 
 .flexelem {
   background: #111;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 6px;
+  padding-left: 50px;
+  min-width: 400px;
+  max-width: 400px;
+  width: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  height: 400px;
+  margin: 10px;
 }
 
 .clickable {
   background: #333;
   padding: 20px 23px 25px 23px;
-  margin: 10px;
+  min-width: 400px;
+  max-width: 400px;
+  width: 400px;
+  max-height: max-content;
+  min-height: max-content;
+  height: max-content;
+  margin: 20px;
   border-radius: 10px;
   -webkit-box-shadow: 5px 7px 3px 1px #111;
           box-shadow: 5px 7px 3px 1px #111;
@@ -93,74 +104,10 @@ flexbox {
   background: #4d4d4d;
 }
 
-.quack:hover {
-  -webkit-animation: fadeIn 1s forwards, hueRotate 10s infinite linear;
-          animation: fadeIn 1s forwards, hueRotate 10s infinite linear;
+.embiggen:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  flex-grow: 0.25;
 }
-
-@-webkit-keyframes hueRotate {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-    -webkit-animation: hueRotate 10s infinite ease-out;
-            animation: hueRotate 10s infinite ease-out;
-  }
-  25% {
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
-    -webkit-animation: hueRotate 10s infinite ease-in;
-            animation: hueRotate 10s infinite ease-in;
-  }
-  50% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-    -webkit-animation: hueRotate 10s infinite ease-out;
-            animation: hueRotate 10s infinite ease-out;
-  }
-  75% {
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
-    -webkit-animation: hueRotate 10s infinite ease-in;
-            animation: hueRotate 10s infinite ease-in;
-  }
-  100% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-    -webkit-animation: hueRotate 10s infinite ease-out;
-            animation: hueRotate 10s infinite ease-out;
-  }
-}
-
-@keyframes hueRotate {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-    -webkit-animation: hueRotate 10s infinite ease-out;
-            animation: hueRotate 10s infinite ease-out;
-  }
-  25% {
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
-    -webkit-animation: hueRotate 10s infinite ease-in;
-            animation: hueRotate 10s infinite ease-in;
-  }
-  50% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-    -webkit-animation: hueRotate 10s infinite ease-out;
-            animation: hueRotate 10s infinite ease-out;
-  }
-  75% {
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
-    -webkit-animation: hueRotate 10s infinite ease-in;
-            animation: hueRotate 10s infinite ease-in;
-  }
-  100% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-    -webkit-animation: hueRotate 10s infinite ease-out;
-            animation: hueRotate 10s infinite ease-out;
-  }
-}
-/*# sourceMappingURL=style.css.map */
