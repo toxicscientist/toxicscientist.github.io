@@ -22,7 +22,7 @@
 			"description": "Calculate tips and split the bill so that your restaurant experience can be as smooth as possible(Svelte)",
 			"image": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/money-with-wings_1f4b8.png",
 			"link": "https://pay.nerdopedia.repl.co/"
-		}
+		},
 		{
 			"name": "Tux",
 			"description": "A bot for my friends chat app. Can greet people, respond to commands and even predict the future(Node.js)",
