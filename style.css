@@ -4,7 +4,8 @@ body{
     height: 100%;
     margin: 4%;
 
-    background: #20252C;
+    background-image: linear-gradient(255deg, #20252C, #20253C);
+    /*background: #20252C;*/
     border-radius: 0.5%;
 
     font-family: 'Poppins', sans-serif;
@@ -69,11 +70,16 @@ a{
     height: 100%;
 
     /* Text/200 */
-    background: #3C424C;
+    background: #3c424c3f;
 
     /* Text/300 */
-    border: 1px solid #454C56;
+    border: 1px solid #454C56aa;
     border-radius: 5px;
+}
+
+.button:hover{
+    transition: all 0.5s ease-in-out;
+    background: #3c424c99;
 }
 
 .icon{
