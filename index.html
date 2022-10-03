@@ -23,7 +23,7 @@
         <!--For the nice look-->
         <title>Nerdopedia's Website</title>
     </head>
-    <body>
+    <body style="background-image: linear-gradient(200deg, #20252C, #301934);">
         <div id="container">
             <div class="title">Nerdopedia</div>
             <div class="subtitle" id="splash">/nɜrdəˈpidiə/</div>
@@ -46,6 +46,9 @@
             <div id="flex">
                 <button class="button">Hello</button>
                 <button class="button">World</button>
+            </div>
+            <div class="minor-title" style="font-size: 50% !IMPORTANT;">
+                <a href="https://github.com/twitter/twemoji">IMAGES FROM TWEMOJI</a>
             </div>
         </div>
     </body>
@@ -92,6 +95,16 @@
         let splash = splashChoices[Math.round(Math.random() * (splashChoices.length - 1))];
         var splashDiv = document.getElementById('splash');
         splashDiv.innerHTML = splash;
+
+        const gradientEnd = [
+            "0F142B",
+            "33033D",
+            "301934",
+            "20253C"
+        ];
+        let gradient = gradientEnd[Math.round(Math.random() * (gradientEnd.length - 1))];
+        var body = document.body
+        body.setAttribute('style', `background-image: linear-gradient(${Math.floor(Math.random() * (256 - 8) + 8)}deg, #20252C, #${gradient});`)
 
         var mainsec = ''
         function httpGet(Url) {
