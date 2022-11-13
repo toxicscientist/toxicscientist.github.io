@@ -28,7 +28,7 @@
         "description": "A bot for my friends chat app. Can greet people, respond to commands and even predict the future(Node.js)",
         "image": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/robot_1f916.png",
         "link": "https://taureon.byemc.xyz/chat/"
-    }
+    },
     {
         "name": "TF2 Weapon Generator",
         "description": "A website that generates TF2 weapons",
