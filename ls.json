@@ -34,5 +34,11 @@
         "description": "A website that generates TF2 weapons",
         "image": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/dagger_1f5e1-fe0f.png",
         "link": "https://toxicscientist.github.io/TF2-Generator/"
+    },
+    {
+        "name": "Acronymizer",
+        "description": "A website that takes in words and makes initialisms out of them",
+        "image": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/input-latin-uppercase_1f520.png",
+        "link": "https://toxicscientist.github.io/Acronymizer/"
     }
 ]
