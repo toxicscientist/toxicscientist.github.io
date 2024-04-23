@@ -133,6 +133,7 @@
             }
         document.getElementById("flex").innerHTML = mainsec;
 
-        document.body.getElementById("age").innerText = Math.floor((Date.now() - 1181681999000)/31557600000)
+        var age = Math.floor((Date.now() - 1181681999000)/31557600000)
+        document.body.getElementById("age").innerText = document.body.getElementById("age").innerText.replace("??", age)
 </script>
 </html>
