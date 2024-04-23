@@ -5,7 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <!--Generic BS-->
+        <!--Generic Stuff-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
             </div>
             </br>
             <div class="minor-title" style="text-align: left !IMPORTANT;">BIO</div>
-            <div style="text-align: left !IMPORTANT;">14 year old programmer, student and nerd who knows Javascript and partially knows C#.</div>
+            <div style="text-align: left !IMPORTANT;"><span id="age">??</span> year old programmer, student and nerd who knows Javascript and likes making fun things.</div>
             </br>
             <div class="minor-title" style="text-align: left !IMPORTANT;">PROJECTS</div>
             <div id="flex">
@@ -55,8 +55,7 @@
 
     <script>
         const splashChoices = [
-            "A true Bruh Moment!",
-            "The true program was the friends we met along the way",
+            "The true nerd was the friends we met along the way",
             "Breathtaking!",
             "8/10 - Not enough fight scenes",
             "8/10 - Not enough reviews",
@@ -73,24 +72,26 @@
             "Featuring Dante from the Devil May Cry series!",
             "& Watch",
             "Deluxe!",
-            "Also plays on 2DS!",
-            "Thoughts and Prayers🙏",
             "Clbuttic",
             "I may be stupid...",
-            "Yes, I know it looks ugly",
             "Clear your history!",
             "Limited edition",
             "h",
             "Reload for better splash message",
             "200% of your daily recommended dose of hyperbole!",
-            "Batteries not included",
-            "yoo it smell like broke in here",
             "undefined",
             "😂 WHO DID THIS 😂",
             "...but nobody came",
-            "Best viewed on Internet Explorer",
             "/nɜrdəˈpidiə/",
-            "[Object object]"
+            "[Object object]",
+            "Errors are fuel",
+            "🤓☝erm what the sigma",
+            "Domain Expansion",
+            "Sick, Wicked Sick",
+            "[0]",
+            "How soon, Miss Frieren?",
+            "what a wonderful duwang",
+            "Do you find it risible when I say the name..."
         ];
         let splash = splashChoices[Math.round(Math.random() * (splashChoices.length - 1))];
         var splashDiv = document.getElementById('splash');
@@ -100,7 +101,9 @@
             "0F142B",
             "33033D",
             "301934",
-            "20253C"
+            "20253C",
+            "9C0373",
+            "5BB5B4"
         ];
         let gradient = gradientEnd[Math.round(Math.random() * (gradientEnd.length - 1))];
         var body = document.body
@@ -129,5 +132,7 @@
                     `
             }
         document.getElementById("flex").innerHTML = mainsec;
+
+        document.body.getElementById("age").innerText = Math.floor((Date.now() - 1181681999000)/31557600000)
 </script>
 </html>

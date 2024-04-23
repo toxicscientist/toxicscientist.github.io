@@ -1,21 +1,15 @@
 [
     {
         "name": "Taratech Discord Bot",
-        "description": "My purely-utility Discord bot(NO LONGER UPDATED)",
+        "description": "My purely-utility Discord bot[CANCELED]",
         "image": "https://em-content.zobj.net/thumbs/120/twitter/322/spider-web_1f578-fe0f.png",
-        "link": "https://taratech.nerdopedia.repl.co/"
+        "link": "https://replit.com/@Nerdopedia/Taratech"
     },
     {
         "name": "KyokaSignal Discord Bot",
-        "description": "A joke Discord bot made for the YKZA translators server(unused)",
+        "description": "A joke Discord bot made for the YKZA translators server[CANCELED]",
         "image": "https://em-content.zobj.net/thumbs/120/twitter/322/regional-indicator-symbol-letter-k_1f1f0.png",
         "link": "https://github.com/toxicscientist/KyokaSignal"
-    },
-    {
-        "name": "Genshin Impact Mini-Guide",
-        "description": "A simple website that lets you browse information about Genshin Impact from an API(Javascript)",
-        "image": "https://em-content.zobj.net/thumbs/120/twitter/322/crossed-swords_2694-fe0f.png",
-        "link": "https://genshin-thing.nerdopedia.repl.co/"
     },
     {
         "name": "Payment Calculator",
@@ -40,5 +34,11 @@
         "description": "A website that takes in words and makes initialisms out of them",
         "image": "https://em-content.zobj.net/thumbs/120/twitter/322/input-latin-uppercase_1f520.png",
         "link": "https://toxicscientist.github.io/Acronymizer/"
+    },
+    {
+        "name": "Standle",
+        "description": "Wordle but using stands from Jojo's Bizarre Adventure",
+        "image": "https://em-content.zobj.net/source/twitter/376/star_2b50.png",
+        "link": "https://toxicscientist.github.io/Standle/"
     }
 ]
