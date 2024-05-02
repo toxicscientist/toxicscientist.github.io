@@ -86,7 +86,7 @@ a{
 
 .project:hover{
     transition: all 2s ease-in-out;
-    width: 32%;
+    width: 30%;
     animation: highlight 180s infinite alternate-reverse 2s;
 }
 
