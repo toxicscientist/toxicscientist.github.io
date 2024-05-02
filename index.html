@@ -27,7 +27,7 @@
         <div id="container">
             <div class="title">Nerdopedia</div>
             <div class="subtitle" id="splash">/nɜrdəˈpidiə/</div>
-            <div style="display: flex; flex-direction: row; justify-content: center;">
+            <div id="icon-container" style="display: flex; flex-direction: row; justify-content: center;">
                 <a href="https://www.youtube.com/channel/UCDz0Ftcy9g9Mw6-MhAAY06A/" style="width: auto">
                     <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA6UlEQVRIie2UTRGDMBCFvz30HglIqIRKQEIlVEIdIAEJSEBCJEQCEughCVCyCT+3Tnkz7wCz+97uJhu48He4A2+gF8ECDhgWHAPjtwu0InRAC1Ql8aXIJiXz/+a1ErRHxDfYaQb9VJnEQDlr4DQDt5FU52LmgqbRDZpBfv5eIOK1s4sE+WBJEgzhzNbVnzNIEwzQFLtWMAenM40JBniinUXaScFA5wOwa8FkRCLZW2QV0bO0mkGTaXU5psJF+NoZddGqQ1UGQVktYxjZQzMA/4a0+K12hHMpXMWR+dGzofI6J74HZsELP4IP4B72bmAXQZAAAAAASUVORK5CYII=">
                 </a>
@@ -65,9 +65,6 @@
             "- A portmanteau of \"Nerd\" and \"Encyclopedia\"",
             "404 - Splash not found!",
             "Nerdopedia",
-            "Well, well, well",
-            "Water-proof!",
-            "& Knuckles",
             "Now available for the new Nintendo 3DS!",
             "Featuring Dante from the Devil May Cry series!",
             "& Watch",
@@ -84,14 +81,15 @@
             "...but nobody came",
             "/nɜrdəˈpidiə/",
             "[Object object]",
-            "Errors are fuel",
+            "THY END IS NOW",
             "🤓☝erm what the sigma",
             "Domain Expansion",
             "Sick, Wicked Sick",
             "[0]",
             "How soon, Miss Frieren?",
             "what a wonderful duwang",
-            "Do you find it risible when I say the name..."
+            "Do you find it risible when I say the name...",
+            "Are these \"projects\" in the room with us right now?"
         ];
         let splash = splashChoices[Math.round(Math.random() * (splashChoices.length - 1))];
         var splashDiv = document.getElementById('splash');
@@ -102,7 +100,9 @@
             "33033D",
             "301934",
             "20253C",
-            "9C0373"
+            "000000",
+            "1E0342",
+            "1B2F11"
         ];
         let gradient = gradientEnd[Math.round(Math.random() * (gradientEnd.length - 1))];
         var body = document.body
@@ -122,10 +122,10 @@
             function edit(item, index, arr) {
                 mainsec +=
                     `
-                    <a href="${item.link}">
-                        <button class="button" style="display: flex; width: 80%; height: 20%;">
+                    <a class="project" href="${item.link}">
+                        <button class="button" style="display: flex; width: 100%; height: 20%;">
                             <div><img src="${item.image}" width=120px height=120px style="border-radius: 1%; padding: 20px;" /></div>
-                            <div><h4 style="text-align: left !IMPORTANT;">${item.name}</h4><div style="text-align: left !IMPORTANT;">${item.description}</div></div>
+                            <div><h4 style="text-align: left;">${item.name}</h4><div style="text-align: left">${item.description}</div></div>
                         </button>
                     </a><br>
                     `

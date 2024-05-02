@@ -1,3 +1,7 @@
+*{
+    transition: all 0.5s ease-in-out;
+}
+
 body{
     position: relative;
     width: 90%;
@@ -18,8 +22,6 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
     text-decoration: none;
 
     width: 100%;
@@ -57,6 +59,7 @@ a{
 #flex{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .button{
@@ -76,6 +79,17 @@ a{
     border-radius: 5px;
 }
 
+.project{
+    margin: 1%;
+    width: 30%;
+}
+
+.project:hover{
+    transition: all 2s ease-in-out;
+    width: 32%;
+    animation: highlight 180s infinite alternate-reverse 2s;
+}
+
 .button:hover{
     transition: all 0.5s ease-in-out;
     background: #3c424c99;
@@ -88,4 +102,9 @@ a{
 .icon:hover{
     filter: invert(100%);
     transition: all 0.5s ease-in-out;
+}
+
+@keyframes highlight {
+    from{width:90%;}
+    to{width:32%}
 }
