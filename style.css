@@ -2,6 +2,22 @@
     transition: all 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 880px) {
+    * {
+        font-size: small;
+    }
+    .project-icon {
+        width: 100%;
+    }
+    #flex {
+        flex-direction: column;
+    }
+    .project{
+        margin: 0%;
+        min-width: 100%;
+    }
+}
+
 body{
     position: relative;
     width: 90%;
