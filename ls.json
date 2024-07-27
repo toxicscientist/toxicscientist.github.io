@@ -46,5 +46,11 @@
         "description": "A small web game where you add numbers to satisfy a condition",
         "image": "https://em-content.zobj.net/source/twitter/376/heavy-equals-sign_1f7f0.png",
         "link": "https://toxicscientist.github.io/Satisfy/"
+    },
+    {
+        "name": "800 Hamburgers",
+        "description": "A web app that lets you turn units into easier-to-understand comparisons",
+        "image": "https://em-content.zobj.net/source/twitter/403/hamburger_1f354.png",
+        "link": "https://toxicscientist.github.io/800-Hamburgers/"
     }
 ]
