@@ -54,6 +54,13 @@ let projects = [
         "image": "https://em-content.zobj.net/source/twitter/376/heavy-equals-sign_1f7f0.png",
         "link": "https://toxicscientist.github.io/Satisfy/",
         "tags": ["featured", "games"]
+    },
+    {
+        "name": "Anything but Metric",
+        "description": "A web app that lets you turn units into easier-to-understand comparisons",
+        "image": "https://em-content.zobj.net/source/twitter/403/straight-ruler_1f4cf.png",
+        "link": "https://toxicscientist.github.io/Anything-but-Metric/",
+        tags: ["featured", "tools"]
     }
 ];
 
