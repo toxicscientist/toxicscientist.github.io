@@ -79,7 +79,7 @@ a{
     justify-content: stretch;
 }
 
-.button{
+button{
     box-sizing: border-box;
     color: #DAE9FF;
     font-family: 'Poppins';

@@ -129,7 +129,6 @@ let tagColours = {
     'games': '#0080ff66',
 }
 function edit(item) {
-    console.log(item)
     mainsec += `
                     <a class="project" href="${item.link}">
                         <button class="button" style="display: flex; width: 100%; height: 20%; background-color: ${tagColours[item.tags[0]]}">
