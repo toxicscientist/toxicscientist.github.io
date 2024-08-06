@@ -60,7 +60,7 @@ let projects = [
         "description": "A web app that lets you turn units into easier-to-understand comparisons",
         "image": "https://em-content.zobj.net/source/twitter/403/straight-ruler_1f4cf.png",
         "link": "https://toxicscientist.github.io/Anything-but-Metric/",
-        tags: ["featured", "tools"]
+        "tags": ["featured", "tools"]
     }
 ];
 
