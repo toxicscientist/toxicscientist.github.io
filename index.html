@@ -12,7 +12,7 @@
         <!--Linking other files-->
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" type="image/ico" href="./Favicon.ico">
-        <!--For Discord embeds-->
+        <!--For embeds-->
         <meta property="og:title" content="Nerdopedia" />
         <meta property="og:site_name" content="Nerdopedia's Website" />
         <meta property="og:description" content="Programmer, Student, Nerd and Professional Human!" />
@@ -43,6 +43,7 @@
             <div style="text-align: left !IMPORTANT;"><span id="age">??</span> year old programmer, student and nerd who knows Javascript and likes making fun things.</div>
             </br>
             <div class="minor-title" style="text-align: left !IMPORTANT;">PROJECTS</div>
+            <div id="tabs"></div>
             <div id="flex">
                 <button class="button">Hello</button>
                 <button class="button">World</button>
@@ -52,87 +53,5 @@
             </div>
         </div>
     </body>
-
-    <script>
-        const splashChoices = [
-            "The true nerd was the friends we met along the way",
-            "From Nerdopedia, the Nerd Encyclopedia",
-            "8/10 - Not enough fight scenes",
-            "8/10 - Not enough reviews",
-            ":)",
-            "...?",
-            "...!",
-            "- A portmanteau of \"Nerd\" and \"Encyclopedia\"",
-            "404 - Splash not found!",
-            "Nerdopedia",
-            "Now available for the new Nintendo 3DS!",
-            "Featuring Dante from the Devil May Cry series!",
-            "& Watch",
-            "Deluxe!",
-            "Clbuttic",
-            "I may be stupid...",
-            "Clear your history!",
-            "Limited edition",
-            "h",
-            "Reload for better splash message",
-            "200% of your daily recommended dose of hyperbole!",
-            "undefined",
-            "😂 WHO DID THIS 😂",
-            "...but nobody came",
-            "/nɜrdəˈpidiə/",
-            "[Object object]",
-            "Ah, a visitor",
-            "🤓☝erm what the sigma",
-            "Domain Expansion",
-            "Sick, Wicked Sick",
-            "[0]",
-            "How soon, Miss Frieren?",
-            "what a wonderful duwang",
-            "Do you find it risible when I say the name...",
-            "Are these \"projects\" in the room with us right now?"
-        ];
-        let splash = splashChoices[Math.round(Math.random() * (splashChoices.length - 1))];
-        var splashDiv = document.getElementById('splash');
-        splashDiv.innerHTML = splash;
-
-        const gradientEnd = [
-            "0F142B",
-            "33033D",
-            "301934",
-            "20253C",
-            "000000",
-            "1E0342",
-            "1B2F11"
-        ];
-        let gradient = gradientEnd[Math.round(Math.random() * (gradientEnd.length - 1))];
-        var body = document.body
-        body.setAttribute('style', `background-image: linear-gradient(${Math.floor(Math.random() * (256 - 8) + 8)}deg, #20252C, #${gradient});`)
-
-        var mainsec = ''
-        function httpGet(Url) {
-            let xmlHttpReq = new XMLHttpRequest();
-            xmlHttpReq.open("GET", Url, false);
-            xmlHttpReq.send(null);
-            return xmlHttpReq.responseText;
-        }
-        var cache = (httpGet('https://toxicscientist.github.io/ls.json'));
-        cacheObj = JSON.parse(cache)
-        var cacheArr = Object.values(cacheObj)
-            cacheArr.forEach(edit);
-            function edit(item, index, arr) {
-                mainsec +=
-                    `
-                    <a class="project" href="${item.link}">
-                        <button class="button" style="display: flex; width: 100%; height: 20%;">
-                            <div class="project-icon"><img class="project-image" src="${item.image}" width=120px height=120px style="border-radius: 1%; padding: 20px;" /></div>
-                            <div><h4 style="text-align: left;">${item.name}</h4><div style="text-align: left">${item.description}</div></div>
-                        </button>
-                    </a><br>
-                    `
-            }
-        document.getElementById("flex").innerHTML = mainsec;
-
-        var age = Math.floor((Date.now() - 1181681999000)/31557600000)
-        document.getElementById("age").innerText = document.getElementById("age").innerText.replace("??", age)
-</script>
+    <script defer="true" src="./script.js"></script>
 </html>
