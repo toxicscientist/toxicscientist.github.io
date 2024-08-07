@@ -2,7 +2,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1024px) {
     * {
         font-size: small;
     }
@@ -15,6 +15,12 @@
     .project{
         margin: 0%;
         min-width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .tab{
+        width: 30% !IMPORTANT;
+        margin-bottom: 1%;
     }
 }
 
@@ -127,7 +133,8 @@ button{
 }
 
 .tabs {
-    display: flex;
+    display: flexbox;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 

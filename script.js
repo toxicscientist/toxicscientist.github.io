@@ -156,5 +156,5 @@ Object.keys(tagged).forEach((i) => {
 })
 setTab('all')
 
-var age = Math.floor((Date.now() - 1181681999000) / 31557600000) // 31557600000ms is a year and 1181681999000 is when i was born in unix time :D
+var age = Math.floor((Date.now() - 1181681999000) / 31557600000) // 31557600000ms is a year in milliseconds and 1181681999000 is when i was born in unix time :D
 document.getElementById("age").innerText = document.getElementById("age").innerText.replace("??", age)
